@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import App from './app.js';
-import './styles.css';
+require('dotenv').config();
+console.log('THIS IS THE PROCESS', process.env.REACT_APP_Q_SERVER)
 
 class Main extends React.Component {
   render() {
